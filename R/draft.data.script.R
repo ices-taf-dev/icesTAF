@@ -18,8 +18,27 @@
 #'        \code{"Restricted"}.
 #' @param content the r code that fetches and saves the data
 #'
-#' @importFrom glue glue
+#' @examples
+#' \dontrun{
+#'
+#' # Create bootstrap folder
+#' mkdir("bootstrap")
+#'
+#' # Create bootstrap script, bootstrap/mydata.R
+#' draft.data.script(name="mydata", title="Title", description="Description",
+#'                   format="txt", originator="Me", year="2022",
+#'                   period=c(2000,2020), access="Public",
+#'                   content='write(pi, file="pi.txt")')
+#'
+#' # Create metadata, bootstrap/DATA.bib
+#' taf.roxygenise(files="mydata.R")
+#'
+#' # Run bootstrap script, creating bootstrap/data/mydata/pi.txt
+#' taf.bootstrap()
+#' }
+#'
 #' @importFrom TAF taf.boot.path
+#' @importFrom glue glue
 #'
 #' @export
 draft.data.script <- function(name, title, description, format, originator, year,
