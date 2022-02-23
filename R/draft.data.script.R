@@ -19,6 +19,7 @@
 #' @param content the r code that fetches and saves the data
 #'
 #' @importFrom glue glue
+#' @importFrom TAF taf.boot.path
 #'
 #' @export
 draft.data.script <- function(name, title, description, format, originator, year,

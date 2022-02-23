@@ -11,6 +11,7 @@ Authors@R:
     person("Ibrahim", "Umar", role = "ctb"),
     person("Hjalte", "Parner", role = "ctb")
   )
+Depends: TAF
 Imports: grDevices, lattice, stats, tools, utils,
   purrr, roxygen2, glue, jsonlite
 LazyData: yes
