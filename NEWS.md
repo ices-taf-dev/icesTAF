@@ -12,8 +12,9 @@
   developments, e.g., tools that are specific to ICES workflows.
 
 * Importantly, there is no difference in the functionality of icesTAF 3.6.0 and
-  4.0.0. No changes need to be made to existing scripts and for ICES analyses,
-  users will continue to start their TAF scripts with library(icesTAF).
+  icesTAF 4.0.0. No changes are necessary in existing scripts and ICES TAF users
+  continue to start their TAF scripts with library(icesTAF). This also loads and
+  attaches the TAF package, so an explicit library(TAF) call is not necessary.
 
 
 
