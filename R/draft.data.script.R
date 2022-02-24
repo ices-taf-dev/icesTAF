@@ -37,8 +37,8 @@
 #' taf.bootstrap()
 #' }
 #'
-#' @importFrom TAF taf.boot.path
 #' @importFrom glue glue
+#' @importFrom TAF taf.boot.path
 #'
 #' @export
 draft.data.script <- function(name, title, description, format, originator, year,
